@@ -1,0 +1,38 @@
+.bus-section{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+}
+
+.bus-section .bus-barra{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    
+}
+
+.bus-section .bus-barra .busqueda{
+    width: 500px;
+    height: 41px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3.5px;
+}
+
+.bus-section .bus-barra .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    margin-left: 9px;
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 3.5px;   
+    color: #1D72C2;
+    font-size: 20px;
+}
+
+
