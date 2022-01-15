@@ -1,5 +1,12 @@
 import {getCompanies, addCompany, delCompany, updCompany} from '../../service/_companies.js'
 
+let role = localStorage.getItem("role")
+if (role == 'Basico'){
+    console.log('hola')
+    let header_user = document.getElementById('header_usuarios')
+    header_user.style.display = "none"
+}
+
 let companyContent = `
     <label class="input-add">Nombre:<input id="add-name-form" type="text"></label>
     <label class="input-add">Direccion:<input id="add-address-form"type="text"></label>

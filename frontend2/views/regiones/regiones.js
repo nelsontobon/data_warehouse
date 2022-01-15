@@ -1,5 +1,15 @@
 import {getRegions, delRegions, addCountry, delCountry, addCity, delCity, addRegion} from '../../service/_regions.js'
 
+let role = localStorage.getItem("role")
+if (role == 'Basico'){
+    console.log('hola')
+    let header_user = document.getElementById('header_usuarios')
+    header_user.style.display = "none"
+}
+
+
+
+
 var container = document.getElementById("regions");
 var addForm = document.getElementById("add-form");
 var formContent = document.getElementById("add-form-content");
