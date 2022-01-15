@@ -18,7 +18,11 @@ const loginUser =  (req, res) => {
                 if (user) {
                     const token = getToken(user._id, user.name, user.role)
                     res.status(200).send(
-                        {"jwt": token}
+                        {
+                            "jwt": token,
+                            "role": user.role
+                        }
+
                     );
                 } else {
                     res.status(400).send(

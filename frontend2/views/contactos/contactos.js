@@ -3,6 +3,14 @@ import {planRowContact} from '../../templates/_plantillas.js'
 import {addRegion, getRegions} from '../../service/_regions.js'
 
 
+let role = localStorage.getItem("role")
+console.log(role)
+if (role == 'Basico'){
+    console.log('hola')
+    let header_user = document.getElementById('header_usuarios')
+    header_user.style.display = "none"
+}
+
 let buscar_btn = document.getElementById('bus-icon')
 let buscar_input = document.getElementById('bus-input')
 let tbody_table = document.getElementById('tbody_table')

@@ -28,6 +28,7 @@ Pasos para replicar el proyecto:
 
 Usuario de ingreso:
 
-Username: Admin
+​	**Username**: admin   **password**: admin123
 
-password: admin123
+​	**Username**: basico  **password**: basico123
+

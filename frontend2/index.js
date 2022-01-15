@@ -12,6 +12,8 @@ btnLogin.addEventListener('click',()=>{
         (res) =>{
             if (res.jwt){
                 localStorage.setItem("jwt", res.jwt);
+                localStorage.setItem("role", res.role);
+
                 window.location.replace("/frontend2/views/contactos/contactos.html")
             }else{
                 let formUser = document.getElementById('formUser')
