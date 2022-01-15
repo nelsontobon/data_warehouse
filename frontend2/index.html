@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/frontend2/styles/login/login.css">
+    <script type="module" src="./index.js"></script>
+</head>
+<body>
+    <section class="header">
+        <section class="headerLogo">
+            LOGO
+        </section>
+        <section class="headerNav">
+            <ul class="nav">
+                <li  >
+                    <a href="/frontend2/views/contactos/contactos.html" class="link">Contatos</a>
+                </li>
+                <li>
+                    <a href="/frontend2/views/companias/companias.html" class="link">Compañias</a>
+                </li>
+                <li>
+                    <a href="/frontend2/views/crear_usuario/crear_usuario.html" class="link">Usuarios</a>
+                </li>
+                <li>
+                    <a href="/frontend2/views/regiones/regiones.html" class="link">Region/Ciudad</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <div class='login' id='LoginContent'>
+        <div class='form-user' id='formUser'>
+            <label >
+                username
+                <input class='input-username' placeholder="username" id="username" />
+            </label>
+
+            <label >
+                password
+                <input class='input-password' type="password" placeholder="password" id="password"/>
+            </label>
+
+            <button class='btn' id="btn-login">Login</button>
+        </div>
+    </div>
+</body>
+</html>

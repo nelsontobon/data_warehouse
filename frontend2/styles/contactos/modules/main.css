@@ -1,0 +1,389 @@
+.cont-content {
+  margin-left: 29.5px;
+}
+
+.cont-content .contactos-titulo {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20.3px;
+  font-size: 17px;
+}
+
+.cont-content .cont-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 98%;
+}
+
+.cont-content .cont-header .bus-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 550px;
+}
+
+.cont-content .cont-header .bus-section .bus-barra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 550px;
+}
+
+.cont-content .cont-header .bus-section .bus-barra .busqueda {
+  width: 500px;
+  height: 41px;
+  border: 1px solid #CCCCCC;
+  border-radius: 3.5px;
+}
+
+.cont-content .cont-header .bus-section .bus-barra .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 41px;
+  height: 41px;
+  margin-left: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3.5px;
+  color: #1CC1F5;
+  font-size: 20px;
+}
+
+.cont-content .cont-header .buttons .btn {
+  height: 41px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.cont-content .cont-header .buttons .white {
+  background-color: white;
+  color: #1CC1F5;
+  border: 1px solid #1CC1F5;
+}
+
+.cont-content .cont-header .buttons .blue {
+  background-color: #1CC1F5;
+  color: white;
+  border: 1px solid #1CC1F5;
+}
+
+.cont-content .cont-header .buttons .upload {
+  width: 41px;
+}
+
+.cont-content .cont-header .buttons .big {
+  width: 172px;
+}
+
+.cont_table {
+  width: 100%;
+}
+
+.cont_table .scroll_table table {
+  width: 96%;
+  margin: 35px 28.5px 0px 27.5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+}
+
+.cont_table .scroll_table table thead {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.cont_table .scroll_table table th {
+  cursor: pointer;
+}
+
+.cont_table .scroll_table table th .icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.cont_table .scroll_table table td,
+.cont_table .scroll_table table th {
+  height: 56px;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 12px;
+  word-wrap: break-word;
+}
+
+.cont_table .scroll_table table .column {
+  width: 217px;
+}
+
+.cont_table .scroll_table table .th_check {
+  width: 10px;
+}
+
+.cont_table .scroll_table table tbody {
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+}
+
+.cont_table .scroll_table table tbody td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cont_table .scroll_table table tbody .check-select {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cont_table .scroll_table table tbody .row_contact,
+.cont_table .scroll_table table tbody .row_region {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cont_table .scroll_table table tbody .row_contact span:last-child,
+.cont_table .scroll_table table tbody .row_region span:last-child {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+}
+
+.cont_table .scroll_table table tbody .row_interest {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cont_table .scroll_table table tbody .row_interest span {
+  margin-right: 15px;
+}
+
+.cont_table .div_delete_contacts {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 450px;
+}
+
+.cont_table .div_delete_contacts button {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  margin: 10px  29.5px;
+  background: #DE0028;
+  border: none;
+  color: white;
+}
+
+.cont_table .div_delete_contacts p {
+  font-size: 16px;
+}
+
+#new_contact {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#new_contact .contact_cont {
+  width: 1215px;
+  height: 577px;
+  background: white;
+}
+
+#new_contact .contact_cont .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  margin-left: 31.5px;
+  margin-top: 26.7px;
+}
+
+#new_contact .contact_cont .title h2 {
+  color: #030303;
+}
+
+#new_contact .contact_cont .title button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#new_contact .contact_cont label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: 0px 8px;
+}
+
+#new_contact .contact_cont label input, #new_contact .contact_cont label select {
+  width: 190px;
+  height: 35.5px;
+  border: 1px solid #CCCCCC;
+}
+
+#new_contact .contact_cont label input:disabled, #new_contact .contact_cont label select:disabled {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#new_contact .contact_cont label .req {
+  color: red;
+}
+
+#new_contact .contact_cont select:invalid {
+  color: gray;
+}
+
+#new_contact .contact_cont option {
+  color: black;
+}
+
+#new_contact .contact_cont .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0px 33.2px;
+}
+
+#new_contact .contact_cont .info .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 60px;
+}
+
+#new_contact .contact_cont .add-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: absolute;
+  bottom: 20%;
+  right: 30%;
+}
+
+#new_contact .contact_cont .add-buttons button {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+#new_contact .contact_cont .add-buttons button:last-child {
+  background: #DE0028;
+  border: none;
+  color: white;
+  display: none;
+}
+
+#new_contact .contact_cont .add-buttons button:first-child, #new_contact .contact_cont .add-buttons button:nth-child(2) {
+  background-color: #429C41;
+  color: white;
+  border: none;
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/frontend2/styles/crear_usuarios/crear_usuarios.css">
+    <script type="module" src="./crear_usuario.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <section class="headerLogo">
+            LOGO
+        </section>
+        <section class="headerNav">
+            <ul class="nav">
+                <li>
+                    <a href="/frontend2/views/contactos/contactos.html" class="link">Contatos</a>
+                </li>
+                <li>
+                    <a href="/frontend2/views/companias/companias.html" class="link">Compañias</a>
+                </li>
+                <li>
+                    <a href="/frontend2/views/crear_usuario/crear_usuario.html" class="link">Usuarios</a>
+                </li>
+                <li>
+                    <a href="/frontend2/views/regiones/regiones.html" class="link">Region/Ciudad</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <div class='login' id='createContent'>
+        <div class='form-user' >
+            <label>
+                Nombre
+                <input class='input-name' placeholder="name" id="name"/>
+            </label>
+            <label>
+                Apellido
+                <input class='input-lastName' placeholder="lastname" id="lastname"/>
+            </label>
+            <label>
+                Email
+                <input class='input-email' placeholder="email" id="email"/>
+            </label>
+            <label>
+                Perfil
+                <select class='input-perfil' id="role">
+                    <option value="Admin">Admin</option>
+                    <option defaultValue value="Basico">Basico</option>
+                </select>
+            </label>
+            <label>
+                password
+                <input class='input-password' type="password" placeholder="password" id="password"/>
+            </label>
+            <label>
+                repetir password
+                <input class='input-password' type="password" placeholder="password" id="password2"/>
+            </label>
+            <button class='btn' id='btn-crear'>crear</button>
+        </div>
+    </div>
+</body>
+
+</html>

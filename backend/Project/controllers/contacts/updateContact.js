@@ -4,19 +4,17 @@
 const response = require('../../config/response.js')
 
 const {
-    createUser
-} = require('../../models/db_user')
+    updateContacts
+} = require('../../models/db_contacts')
 
 
-const createNewUser = (req, res) => {
-    console.log('DATAAAA')
-    createUser(req.body).then((id)=>{
-        console.log('id', id)
+const putContact = async (req, res) => {
+    updateContacts(req.query['id'], req.body).then(()=>{
         res.status(200).send(
             new response(
                 'ok',
                 '200',
-                'usuario creado correctamente'
+                'Contacto actualizado correctamente'
             )
         )
     }).catch((err) => {
@@ -25,10 +23,10 @@ const createNewUser = (req, res) => {
             new response(
                 'error',
                 '500',
-                'ha ocurrido un error al eliminar el usuario'
+                'ha ocurrido un error al actualizar el Contacto'
             )
         )
     })
 }
 
-module.exports = {createNewUser}
+module.exports = {putContact}

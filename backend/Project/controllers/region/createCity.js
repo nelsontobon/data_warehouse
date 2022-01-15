@@ -1,6 +1,4 @@
-/**
- * Controlador para crear un usuario
- */
+
 const response = require('../../config/response.js')
 
 const {

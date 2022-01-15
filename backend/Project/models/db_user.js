@@ -1,4 +1,4 @@
-const users = require ('../database/schemas/user');
+const users = require ('../database/schemas/user_sc');
 
 const findUser = async (obj) => {
     try{
@@ -10,7 +10,7 @@ const findUser = async (obj) => {
 }
 
 const createUser = async (obj) => {
-
+    console.log('data', obj)
     try{
         const newUser = new users(obj)
         const  {_id} = await newUser.save()

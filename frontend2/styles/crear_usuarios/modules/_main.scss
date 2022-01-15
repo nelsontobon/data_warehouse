@@ -1,0 +1,44 @@
+.login{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-user{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    box-shadow: 2px 2px 20px 2px #ccc;
+    margin-top: 50px;
+
+    label{
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 10px;
+
+        input{
+            width: 180px;
+            height: 20px;
+
+            &:focus{
+                outline: none;
+                border: 2px solid blue;
+            }
+        }
+        
+    }
+
+    .btn {
+        width: 190px;
+        height: 35px;
+        margin-top: 10px;
+        background-color: #429C41;
+        color: white;
+        border: none;
+    }
+}

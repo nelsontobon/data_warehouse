@@ -1,22 +1,22 @@
-/**
- * Controlador para crear un usuario
- */
+
 const response = require('../../config/response.js')
 
 const {
-    createUser
-} = require('../../models/db_user')
+    getRegion
+} = require('../../models/db_region')
 
 
-const createNewUser = (req, res) => {
-    console.log('DATAAAA')
-    createUser(req.body).then((id)=>{
-        console.log('id', id)
+const getRegions = async (req, res) => {
+    // const {id, data} = req.body
+
+    getRegion().then((data)=>{
+        console.log(data)
         res.status(200).send(
             new response(
                 'ok',
                 '200',
-                'usuario creado correctamente'
+                'ConsultaExitosa',
+                data
             )
         )
     }).catch((err) => {
@@ -25,10 +25,10 @@ const createNewUser = (req, res) => {
             new response(
                 'error',
                 '500',
-                'ha ocurrido un error al eliminar el usuario'
+                'ha ocurrido un error al consultar las regiones'
             )
         )
     })
 }
 
-module.exports = {createNewUser}
+module.exports = {getRegions}

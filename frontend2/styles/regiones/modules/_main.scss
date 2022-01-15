@@ -1,0 +1,144 @@
+#content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .btn-add-region{
+        align-self: flex-start;
+        margin-top: 20px;
+        margin-left: 390px;
+        width: 190px;
+        height: 35px;
+        background-color: #429C41;
+        color: white;
+        border: none;
+    }
+
+    ul,
+    #myUL {
+        list-style-type: none;
+    }
+
+    #regions{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;   
+        margin-top: 20px; 
+        width: 50%;
+        border: 2px solid black;
+
+        #myUL {
+            margin: 0;
+            padding: 0;
+
+            .caret {
+                cursor: pointer;
+                user-select: none;
+
+                &::before {
+                    content: "\25B6";
+                    color: black;
+                    display: inline-block;
+                    margin-right: 6px;
+                }   
+            }
+
+
+            .caret-down::before {
+                transform: rotate(90deg);
+            }
+
+            .nested {
+                display: none;
+            }
+
+            .active {
+                display: block;
+            }
+
+            li {
+                margin: 25px;
+                font-size: 20px;
+            }
+
+            .add, .del{
+                width: 100px;
+                height: 20px;
+            }
+
+            .add{
+                background-color: #429C41;
+                color: white;
+                border: none;
+            }
+
+            .del{
+                background: #DE0028;
+                border: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.add-form{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background:  rgba(0,0,0,0.80);
+    justify-content: center;
+    align-items: center;
+    
+    .form{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+        width: 300px;
+        height: 200px;
+
+        .input-add{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            
+            input{
+                height: 35px;
+            }
+        }
+
+        div{
+            button{
+                width: 120px;
+                height: 35px;
+
+                cursor: pointer;
+                margin: 10px;
+
+                &:last-child{
+                    background: #DE0028;
+                    border: none;
+                    color: white;
+                }
+
+                &:first-child{
+                    background-color: #429C41;
+                    color: white;
+                    border: none;
+                }
+            }
+        }
+    }
+    
+}
+

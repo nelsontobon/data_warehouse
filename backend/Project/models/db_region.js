@@ -1,5 +1,16 @@
-const region = require ('../database/schemas/regions');
+const region = require ('../database/schemas/regions_sc');
 
+const getRegion = async () => {
+    try{
+        let Region = await region.find().lean()
+        
+        if (Region === null) throw "La region no existe"
+        
+        return Region
+    }catch(err){
+        throw err
+    }
+}
 
 const createRegion = async (obj) => {
     try{
@@ -123,6 +134,7 @@ const deleteCity = async (nomRegion, obj) => {
 
 
 module.exports = {
+    getRegion,
     createRegion,
     createCountry,
     createCity,

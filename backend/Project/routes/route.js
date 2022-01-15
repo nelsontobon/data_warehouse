@@ -1,5 +1,7 @@
 const user = require('../modules/user')
 const region = require('../modules/region')
+const companies = require('../modules/companies')
+const contact = require('../modules/contacts')
 
 
 /**
@@ -8,6 +10,7 @@ const region = require('../modules/region')
  */
 module.exports = function (app) {
     app.use('/user',user)
-    app.use('/',region)
-
+    app.use('/region',region)
+    app.use('/companies',companies)
+    app.use('/contacts',contact)
 }

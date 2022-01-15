@@ -8,11 +8,11 @@ const config = require('../config/config');
 //------------- MIDDLEWARS --------------------------------
 
 // Limita el numero de peticiones por hora
-let limiter = rateLimit({
-    windowMs: 60 * 60 * 1000, // 60 minutos
-    max: 20,
-    message: "Se supero el limite de 20 peticiones por hora"
-});
+// let limiter = rateLimit({
+//     windowMs: 60 * 60 * 1000, // 60 minutos
+//     max: 300,
+//     message: "Se supero el limite de 20 peticiones por hora"
+// });
 
 module.exports = function (app) {
     // app.use(helmet());
@@ -25,14 +25,14 @@ module.exports = function (app) {
     app.use(express.json({
         limit: '100kb'
     }));
-    app.use(limiter);
+    // app.use(limiter);
 
     // Seguridad por token
     app.use(expressJwt({
         secret: config.TOKENPASSWORD,
         algorithms: ['sha1', 'RS256', 'HS256']
     }).unless({
-        path: ["/user/login"]
+        path: ["/user/login","/user/createUser"]
     }));
 
     // Verificacion del token

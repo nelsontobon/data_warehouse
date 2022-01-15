@@ -4,19 +4,18 @@
 const response = require('../../config/response.js')
 
 const {
-    createUser
-} = require('../../models/db_user')
+    updateCompany
+} = require('../../models/db_companies')
 
 
-const createNewUser = (req, res) => {
-    console.log('DATAAAA')
-    createUser(req.body).then((id)=>{
-        console.log('id', id)
+const putCompany = async (req, res) => {
+    console.log(req.query['id'], req.body)
+    updateCompany(req.query['id'], req.body).then(()=>{
         res.status(200).send(
             new response(
                 'ok',
                 '200',
-                'usuario creado correctamente'
+                'Compañia actualizada correctamente'
             )
         )
     }).catch((err) => {
@@ -25,10 +24,10 @@ const createNewUser = (req, res) => {
             new response(
                 'error',
                 '500',
-                'ha ocurrido un error al eliminar el usuario'
+                'ha ocurrido un error al actualizar la compañia'
             )
         )
     })
 }
 
-module.exports = {createNewUser}
+module.exports = {putCompany}

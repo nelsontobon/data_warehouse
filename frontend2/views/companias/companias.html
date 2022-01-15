@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/frontend2/styles/companias/companias.css">
+    <script type="module" src="./companias.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <section class="headerLogo">
+            LOGO
+        </section>
+        <section class="headerNav">
+            <ul class="nav">
+                <li>
+                    <a href="/frontend2/views/contactos/contactos.html" class="link">Contatos</a>
+                </li>
+                <li>
+                    <a href="/frontend2/views/companias/companias.html" class="link">Compañias</a>
+                </li>
+                <li>
+                    <a href="/frontend2/views/crear_usuario/crear_usuario.html" class="link">Usuarios</a>
+                </li>
+                <li>
+                    <a href="/frontend2/views/regiones/regiones.html" class="link">Region/Ciudad</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section class="content">
+        <section class="title">
+            <h1>Compañias</h1>
+            <button id="agregar-btn">Agregar</button>
+        </section>
+        <section class="table-content">
+            <table id="tb_companies">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>País</th>
+                        <th>Dirección</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </section>
+    <section id="add-form" class="add-form">
+        <div id="add-form-content" class="form">
+            <label class="input-add">Nombre:<input id="add-name-form" type="text"></label>
+            <label class="input-add">Direccion:<input id="add-address-form"type="text"></label>
+            <label class="input-add">Email:<input id="add-email-form"type="text"></label>
+            <label class="input-add">Numero:<input id="add-phone-form"type="text"></label>
+            <label class="input-add">Pais:<input id="add-city-form" type="text"></label>
+            <div>
+                <button id="btn-add">Agregar</button>
+                <button id="btn-cancel">cancelar</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+

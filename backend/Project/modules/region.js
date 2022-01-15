@@ -4,7 +4,7 @@
 const express = require('express');
 const router = express.Router();
 
-
+const {getRegions} = require('../controllers/region/getRegions')
 const {createNewRegion} = require('../controllers/region/createRegion')
 const {createNewCountry} = require('../controllers/region/createCountry')
 const {createNewCity} = require('../controllers/region/createCity')
@@ -14,10 +14,7 @@ const {delCity} = require('../controllers/region/deleteCity')
 
 
 
-
-const {validateRol} = require('../middlewars/user/validateRol')
-
-
+router.get("/getRegions", getRegions)
 router.post("/Region", createNewRegion)
 router.post("/Country", createNewCountry)
 router.post("/City", createNewCity)

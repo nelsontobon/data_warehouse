@@ -4,19 +4,19 @@
 const response = require('../../config/response.js')
 
 const {
-    createUser
-} = require('../../models/db_user')
+    searchContact
+} = require('../../models/db_contacts.js')
 
 
-const createNewUser = (req, res) => {
-    console.log('DATAAAA')
-    createUser(req.body).then((id)=>{
-        console.log('id', id)
+const searchContacts = async (req, res) => {
+    let {data} = req.query
+    searchContact(data).then((data)=>{
         res.status(200).send(
             new response(
                 'ok',
                 '200',
-                'usuario creado correctamente'
+                'busqueda completada',
+                data
             )
         )
     }).catch((err) => {
@@ -25,10 +25,10 @@ const createNewUser = (req, res) => {
             new response(
                 'error',
                 '500',
-                'ha ocurrido un error al eliminar el usuario'
+                'ha ocurrido un error al hacer la busqueda'
             )
         )
     })
 }
 
-module.exports = {createNewUser}
+module.exports = {searchContacts}

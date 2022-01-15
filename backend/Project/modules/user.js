@@ -14,7 +14,9 @@ const {validateRol} = require('../middlewars/user/validateRol')
 
 
 router.post("/login", loginUser)
-router.post("/createUser",validateRol, validatePass, validateUser,createNewUser)
+// router.post("/createUser", validatePass, validateUser,createNewUser)
+router.post("/createUser", createNewUser)
+
 
 
 
